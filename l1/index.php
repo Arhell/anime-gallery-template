@@ -10,6 +10,18 @@
 <body>
 <h1> Hello world </h1>
 <?php
+  // some text
+
+  # some text 2
+
+  /*Some text
+  some text*/
+
+  echo '<h1> Hello world </h1>';
+  echo '<h1> Hello world2 </h1>';
+  print '<h1> Hello world3 </h1>';
+?>
+<?php
   echo '<h1> Hello world </h1>';
 ?>
 </body>
