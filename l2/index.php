@@ -13,6 +13,7 @@ define("PAGE", "new page");
 //define("PAGE", "new page2")
 
 const PAGE2 = 'new const'; #only php version 5.3+
+//  $this = 'this'
 
 ?>
 
