@@ -41,3 +41,17 @@ $i = 11;
 do{
   echo $i++;
 }while($i <= 10);
+
+$x = 1;
+echo "table border=\"1\>\n";
+while ($x < 10) {
+  echo "\t<tr>\n";
+  $y = 1;
+  while ($y < 10) {
+    echo "\t\t<td>$x * $y = " . $x * $y . "</td>\n";
+    $y++;
+  }
+  echo "\t</tr>\n";
+  $x++;
+}
+echo "</table>";
