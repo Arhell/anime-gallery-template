@@ -1,6 +1,7 @@
 <?php error_reporting(-1);
 
 $arr = array('1', '2', '3');
+$arr[] = '4';
 var_dump($arr);
 echo "<pre>";
 print_r($arr);
