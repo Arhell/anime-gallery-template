@@ -86,6 +86,40 @@ echo "<pre>";
 echo $arr_result2;
 echo "</pre>";
 
+$new_result1 = array_rand($arr, 2); // random key
+$new_result2 = array_reverse($arr, true);
+
+echo "<pre>";
+echo $new_result1;
+echo "</pre>";
+
+echo "<pre>";
+echo $new_result2;
+echo "</pre>";
+
+$city = 'Some $city';
+$state = 'Some state';
+$event = 'EVENT';
+
+$all = compact('city', 'state', 'event');
+
+echo "<pre>";
+echo $all;
+echo "</pre>";
+
+$some_arr = [
+  'city' => 'SF',
+  'state' => 'CA',
+  'event' => 'do'
+];
+
+extract($some_arr);
+echo $city;
+
+echo "<pre>";
+echo $some_arr;
+echo "</pre>";
+
 
 
 
