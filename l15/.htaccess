@@ -1,0 +1,2 @@
+AddDefaultCharset utf-8
+#php_flag default_charset utf-8
