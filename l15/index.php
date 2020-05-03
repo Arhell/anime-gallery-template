@@ -1,10 +1,15 @@
 <?php
-require_once 'inc.php';
-header('Content-Type: text/html; charset=utf-8');
+//require_once 'inc.php';
+//header('Content-Type: text/html; charset=utf-8');
+header('Content-Type: text/plain; charset=utf-8');
+//header('Content-Disposition: attachment; filename="text.txt"');
+readfile('text.txt');
+//header('HTTP/1.0 404 Not Found');
+//header('HTTP/1.0 304 Not Modified');
 //header('Location: inc.php');
-header('refresh: 5; url=inc.php');
-exit;
-//die;
+//header('refresh: 5; url=inc.php');
+//exit;
+die
 ?>
 <!doctype html>
 <html lang="en">
