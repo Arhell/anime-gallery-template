@@ -24,3 +24,22 @@ echo mysqli_affected_rows($db);
 $res = mysqli_query($db, "SELECT * FROM db");
 echo $res;
 
+function print_arr($arr) {
+  echo '<pre>' . print_r($arr, true) .'</pre>';
+}
+
+$data = mysqli_fetch_all($res, MYSQL_ASSOC);
+
+print_arr($data);
+
+foreach ($data as $item) {
+  echo "Text: {$item['text']} <br>";
+}
+
+$data2 = [];
+
+while ($row = mysqli_fetch_assoc($res)) {
+  $data2[$row['id']] = $row;
+}
+
+print_arr($data2);
