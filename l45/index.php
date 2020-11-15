@@ -1,20 +1,31 @@
 <?php
 
 error_reporting(-1);
-require_once 'classes/Product.php';
-require_once 'classes/BookProduct.php';
-require_once 'classes/Id.php';
-require_once 'classes/iInterface.php';
+//require_once 'classes/Product.php';
+//require_once 'classes/BookProduct.php';
+//require_once 'classes/Id.php';
+//require_once 'classes/iInterface.php';
 
-function autoloader($class)
+function autoloader1($class)
 {
+  echo 1;
   $file = __DIR__ . "/classes/{$class}.php";
   if(file_exists($file)) {
     require_once $file;
   }
 }
 
-spl_autoload_register('autoloader');
+function autoloader2($class)
+{
+  echo 2;
+  $file = __DIR__ . "/interface/{$class}.php";
+  if(file_exists($file)) {
+    require_once $file;
+  }
+}
+
+spl_autoload_register('autoloader1');
+spl_autoload_register('autoloader2', true, true);
 
 function debug($data) {
   echo '<pre>' . print_r($data, 1) . '</pre>';

@@ -11,6 +11,7 @@ class BookProduct extends Product implements iInterface
     parent::__construct($name, $price);
     $this->page = $page;
     $this->setDiscount(5);
+    var_dump(self::class);
   }
 
   public function getCase()
