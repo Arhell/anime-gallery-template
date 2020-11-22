@@ -1,5 +1,6 @@
 <?php
 
+namespace classes;
 
 abstract class Product
 {

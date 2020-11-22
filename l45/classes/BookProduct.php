@@ -1,7 +1,8 @@
 <?php
 
+namespace classes;
 
-class BookProduct extends Product implements iInterface
+class \classes\BookProduct extends Product implements iInterface
 {
 
   public $page;

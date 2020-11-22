@@ -1,6 +1,6 @@
 <?php
 
-namespace \interface;
+namespace classes\interface;
 
 interface Id
 {

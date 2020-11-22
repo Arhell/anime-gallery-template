@@ -8,8 +8,9 @@ error_reporting(-1);
 
 function autoloader1($class)
 {
+  $class = srt_replace("\\", "/", $class);
   echo 1;
-  $file = __DIR__ . "/classes/{$class}.php";
+  $file = __DIR__ . "/{$class}.php";
   if(file_exists($file)) {
     require_once $file;
   }
@@ -18,7 +19,7 @@ function autoloader1($class)
 function autoloader2($class)
 {
   echo 2;
-  $file = __DIR__ . "/interface/{$class}.php";
+  $file = __DIR__ . "/{$class}.php";
   if(file_exists($file)) {
     require_once $file;
   }
