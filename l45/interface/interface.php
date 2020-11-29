@@ -1,6 +1,6 @@
 <?php
 
-namespace classes\interface;
+namespace classes;
 
 interface iInterface
 {
