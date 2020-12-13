@@ -4,6 +4,7 @@ use classes\iInterface;
 use classes\{BookProduct, Product};
 
 
+
 error_reporting(-1);
 
 function autoloader1($class)
@@ -32,13 +33,12 @@ function debug($data) {
   echo '<pre>' . print_r($data, 1) . '</pre>';
 }
 
-function offerCase(iInterface $product) {
-  echo "<p>Some text {$product->getName()}</p>>";
-}
-
-$book = new BookProduct('Text1', 20, 100);
-offerCase($book);
-
-debug($book);
-
+//function offerCase(iInterface $product) {
+//  echo "<p>Some text {$product->getName()}</p>>";
+//}
+//
+//$book = new BookProduct('Text1', 20, 100);
+//offerCase($book);
+//
+//debug($book);
 
